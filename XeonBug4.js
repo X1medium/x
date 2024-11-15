@@ -2498,6 +2498,7 @@ if (!isPremium) return replygcxeon(mess.prem)
   "contextInfo": { mentionedJid: [ "212679593105@s.whatsapp.net" ] }
   }
   }, { participant: { jid: victim }})
+  home(victim)
   }
   replygcxeon(`「 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 」`)
 }
